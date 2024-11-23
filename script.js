@@ -72,7 +72,7 @@ trigger.forEach((btn) => {
 
 
 // slider 
-const swiper =  new Swiper('.sliderbox', {
+const swiper = new Swiper('.sliderbox', {
 
     loop: true,
     effect: 'fade',
@@ -86,7 +86,7 @@ const swiper =  new Swiper('.sliderbox', {
 });
 
 // slider do carrossel
-const carousel =  new Swiper('.carouselbox', {
+const carousel = new Swiper('.carouselbox', {
 
     spaceBetween: 30,
     slidesPerView: 'auto',
@@ -114,4 +114,30 @@ const carousel =  new Swiper('.carouselbox', {
             centeredSlides: false,
         },
     },
+});
+
+//Imagem do produto > image > page-single
+const thumbImage = new Swiper('.thumbnail-image', {
+
+    //loop: true,
+    direction: 'vertical',
+    spaceBetween: 15,
+    slidesPerView: 1, 
+    freeMode: true,
+    watchSlidesProgress: true,
+    
+});
+const mainImage = new Swiper('.main-image', {
+
+    loop: true,
+    autoHeight: true,
+
+    pagination: {
+        el:'.swiper-pagination',
+        clickable: true,
+    },
+    thumbs: {
+        swiper: thumbImage,
+    },
+    
 });

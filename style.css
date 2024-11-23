@@ -947,6 +947,131 @@ main > div .heading {
 
 
 
+/*---------------------*
+    #PAGE-SINGLE
+ *---------------------*/
+
+ /*
+    __#Breadcrumb_____
+
+ */
+
+.breadcrumb {
+    width: 100%;
+    line-height: initial;
+    padding: 30px 0 50px;
+}
+.breadcrumb ul {
+    justify-content: center;
+}
+.breadcrumb ul li {
+    position: relative;
+    margin-right: 10px;
+}
+.breadcrumb ul li:not(:first-child) {
+    padding-left: 25px;
+}
+.breadcrumb ul li:not(:first-child)::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    /*background-image: url("");*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.breadcrumb ul :where(li, li a) {
+    font-size: var(--fs14);
+    padding: 0;
+}
+.breadcrumb ul li:last-child {
+    color: var(--grey-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    /*
+        __#Imagem do produto_____
+    */
+.product .wrapper {
+    --grid-col: 331px
+}
+.product .main-image img {
+    width: 100%;
+}
+.product .outer-thumb {
+    display: none;
+}
+.product .outer-thumb .item {
+    height: fit-content!important;
+    cursor: pointer;
+}
+.product .thumb-wrap {
+    position: relative;
+    width: 70px;
+    height: 90px;
+}
+.product .outer-thumb img {
+    transition: var(--transition-transform);
+}
+.product .outer-thumb .swiper-slide-thumb-active > div,
+.product .outer-thumb .item:hover > div {
+    border: 1px solid var(--grey-color);
+}
+.product .outer-thumb .swiper-slide-thumb-active img,
+.product .outer-thumb .item:hover img {
+    transform: scale3d(.85,.85,.85);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) {
+    .product .wrapper {
+        --gutter: 60px; 
+    }
+    .product.dotgrid .image {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        height: min-content;
+        overflow: hidden;
+    }
+    .product .outer-main {
+        width: calc(100% - 85px);
+        height: 100%;
+        margin: 0 0 0 85px;
+    }
+    .product .outer-thumb {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+
+
+
 @media (min-width: 768px) {
     .banner {
         background-size: contain;
