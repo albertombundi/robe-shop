@@ -1218,6 +1218,64 @@ main > div .heading {
 .summary .product-control ul li:first-child a:hover i {
     color: var(--red-color);
 }
+.product .summary .shipping {
+    padding-top: 30px;
+    border-top: 1px solid var(--flashwhite-color);
+}
+.product .summary .shipping li {
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.product .summary .shipping li i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+
+
+
+
+/*
+    ___#Descrição do produto / tabbed_________
+*/
+.product.detail {
+    padding-top: 30px;
+    margin: 70px 0;
+}
+.product nav {
+    position: relative;
+}
+.product nav::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 58px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--light-color);
+}
+.product nav ul li a {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 20px 0;
+    margin-right: 30px;
+    white-space: nowrap;
+    color: var(--grey-color);
+}
+.product nav ul :is(li.active a, li a:hover) {
+    color: var(--dark-color); 
+}
+
+
+
+
+
+
 
 
 
@@ -1259,7 +1317,26 @@ main > div .heading {
     .banner {
         background-size: contain;
     }
+    .product.dotgrid .image {
+        max-width: 100%;
+        margin: 0;
+        position: sticky;
+        top: 30px;
+    }
+    .product nav ul {
+        justify-content: center;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 992px) {
@@ -1351,11 +1428,24 @@ main > div .heading {
 
 
 
+
+
+
+
+
+
+
 @media (max-width: 480px) {
     .carousel .dotgrid .item {
         width: 270px;
     }
 }
+
+
+
+
+
+
 
 
 @media (min-width: 1200px) {
@@ -1364,6 +1454,14 @@ main > div .heading {
         --gutter: 40px;
     }
 }
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 1400px) {
@@ -1381,5 +1479,18 @@ main > div .heading {
     }
     .carousel .nav > .swiper-button-prev {
         left: -40px;
+    }
+    .product .outer-main {
+        width: 100%;
+        margin: 0;
+    }
+    .product .image .outer-thumb {
+        position: absolute;
+        top: 0;
+        left: -100px;
+        height: 100%;
+    }
+    .product.dotgrid .image {
+        overflow: unset;
     }
 }
