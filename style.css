@@ -1056,7 +1056,8 @@ main > div .heading {
     flex-direction: column;
     padding-left: 30px;
 }
-.summary .product-price .wrap::before {
+.summary .product-price .wrap::before,
+.product .head-review span::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1270,9 +1271,107 @@ main > div .heading {
 .product nav ul :is(li.active a, li a:hover) {
     color: var(--dark-color); 
 }
+.product nav ul li a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    background-color: var(--dark-color);
+    transition: width .3s;
+}
+.product nav ul li.active a::before {
+    width: 100%;
+}
+.product nav .item-floating {
+    right: -18px;
+    top: 0;
+    background-color: var(--dark-color);
+}
+.product .product-about {
+    padding: 50px 0;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.product .product.about .text-block {
+    padding-bottom: 30px;
+}
+.product .product.about :where(h3, h4) {
+    font-family: var(--primary-font);
+    margin-bottom: 15px;
+}
+.product .product.about h3 {
+    font-size: 22px;
+}
+.product .product.about h4 {
+    font-weight: var(--fw600);
+}
+.product .product.about ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.product.detail .dotgrid .wrapper {
+    --grid-col: 250px;
+    --gutter: 30px;
+}
+.product .product.about.custom h3 {
+    font-size: 50px;
+    font-weight: var(--fw600);
+    text-align: center;
+    color: var(--light-color);
+}
+.product .review {
+    max-width: 770px;
 
-
-
+}
+.product .review .head-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 30px;
+    border-bottom: 1px solid  var(--light-color);
+}
+.product .review .head-review strong {
+    font-size: 50px;
+}
+.product .review .head-review span {
+    position: relative;
+    padding-left: 20px;
+}
+.product .head-review span::before {
+    height: 50px;
+    top: -30px;
+}
+.product .head-review .primary-btn {
+    border-width: 1px;
+    text-transform: unset;
+    font-weight: 500;
+}
+.product .profile .thumb-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product .profile .image {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.product .profile .grouping {
+    line-height: initial;
+}
+.product .profile .name {
+    font-weight: var(--fw600);
+    margin-bottom: 5px;
+}
+.product .profile .name {
+    font-size: 12px;
+    margin-top: 8px;
+}
 
 
 
@@ -1305,6 +1404,9 @@ main > div .heading {
     }
     .custom-pagination {
         display: none;
+    }
+    .product .profile .comment {
+        padding-left: 92px;
     }
 }
 
