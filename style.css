@@ -940,7 +940,8 @@ main > div .heading {
     border: 2px solid var(--dark-color);
 }
 
-.inner-footer .bottom {
+.inner-footer .bottom,
+.page-single .carousel {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -1293,6 +1294,11 @@ main > div .heading {
     padding: 50px 0;
     max-width: 980px;
     margin: 0 auto;
+    display: none;
+    animation: var(--fade);
+}
+.product .product-about.active {
+    display: block;
 }
 .product .product.about .text-block {
     padding-bottom: 30px;
@@ -1372,6 +1378,32 @@ main > div .heading {
     font-size: 12px;
     margin-top: 8px;
 }
+.review .profile {
+    padding-bottom: 40px;
+}
+
+
+    /*
+        ___#Popup Modal_____
+    */
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
