@@ -239,7 +239,8 @@ input.checker:checked::after {
 .overlay, 
 .mobile-menu, 
 .data-popup, 
-.cart-menu {
+.cart-menu, 
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -349,7 +350,8 @@ input.checker:checked::after {
 .menu-trigger:hover {
     color: var(--light-color);
 }
-.header-left .list-inline {
+.header-left .list-inline, 
+.sidebar .widget input[type="checkbox"] {
     display: none;
 }
 :where(.header-left, .header-right) li {
@@ -528,19 +530,22 @@ form :where(input, textarea, select)::placeholder {
     __#HEADER: Menu para Mobile
 -*/
 .mobile-menu, 
-.cart-menu {
+.cart-menu, 
+.sidebar {
     z-index: 1001;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
 }
 .mobile-menu.active, 
-.cart-menu.active {
+.cart-menu.active,
+.sidebar.active {
     visibility: visible;
     opacity: 1;
 }
 .mobile-menu .wrap,
-.cart-menu .wrap {
+.cart-menu .wrap,
+.sidebar > .wrap {
     position: relative;
     max-width: calc(100% - 40px);
     width: 360px;
@@ -551,12 +556,14 @@ form :where(input, textarea, select)::placeholder {
     transition: var(--transition-transform);
 }
 .mobile-menu.active .wrap,
-.cart-menu.active .wrap {
+.cart-menu.active .wrap,
+.sidebar.active > .wrap {
     transform: translateX(0);
 }
 .mobile-menu .close-trigger,
 .mobile-menu .child-trigger,
-.cart-menu .close-trigger {
+.cart-menu .close-trigger,
+.sidebar .close-trigger {
     position: absolute;
     top: 0;
     right: -40px;
@@ -569,7 +576,8 @@ form :where(input, textarea, select)::placeholder {
 
 }
 .mobile-menu .main-menu,
-.cart-menu .cart-list {
+.cart-menu .cart-list,
+.sidebar-content {
     height: 100%;
     padding: 0 20px;
     display: flex;
@@ -1713,13 +1721,19 @@ form .button button,
 /*---------------------*
     #CATEGORY-PAGE
  *---------------------*/
+
+ /*
+    __sidebar
+ */
 .sidebar-title {
     font-size: 26px;
+    padding-top: 100px;
 }
 .sidebar .widget {
     margin: 20px 0;
 }
-.sidebar label {
+.sidebar label, 
+.sidebar .price-range {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -1734,11 +1748,125 @@ form .button button,
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition-transform);
 }
 .sidebar .list-block ul {
     padding-left: 15px;
     margin-top: 20px;
     height: 230px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background-color: var(--light-color);
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 14px;
+    background-color: var(--grey-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+.sidebar .price-range {
+    font-size: 18px;
+}
+.sidebar .widget .accord {
+    padding-right: 15px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.sidebar .widget input:checked ~ div {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar .widget input:checked ~ label i {
+    transform: rotate(180deg);
+}
+.slider .widget :where(.accord > div, .range-track) {
+    padding-top: 20px;
+}
+
+/*
+    ____#Product category_____
+*/
+
+.category-content .button {
+    margin: 60px 0 100px;
+    text-align: center;
+}
+.category-content :where(.sorter, .right) {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.category-content .sorter {
+    margin: 0 0 30px;
+}
+.category-content .sorter > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    position: fixed;
+    top: calc(50% - 20px);
+    left: 0;
+    z-index: 10;
+    opacity: .5;
+    transition: opacity .3s, var(--transition-transform);
+}
+.category-content .sorter > a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.category-content .opt-trigger {
+    gap: 5px;
+    margin-right: 15px;
+    line-height: 1.4;
+}
+.category-content .opt-trigger span {
+    font-size: var(--fs14);
+    font-weight: var(--fw600);
+}
+.category-content .opt-trigger i {
+    font-size: 24px;
+}
+.category-content .sort-list ul {
+    width: 180px;
+}
+.category-content .right .list-inline a {
+    display: flex;
+    padding: 7px;
+    background-color: var(--flashwhite-color);
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.category-content .left span {
+    display: none;
+}
+.category-content .dotgrid .wrapper {
+    --grid-col: 221px
 }
 
 
@@ -1791,7 +1919,9 @@ form .button button,
     .product nav ul {
         justify-content: center;
     }
-    
+    .category-content .left span {
+        display: block;
+    }
 }
 
 
@@ -1803,9 +1933,10 @@ form .button button,
 
 
 
-
 @media (min-width: 992px) {
-    .menu-trigger {
+    .menu-trigger, 
+    .sidebar .close-trigger,
+    .category-content .sorter > a {
         display: none;
     }
     .header-center nav {
@@ -1816,7 +1947,7 @@ form .button button,
     }
 
     /*
-    __#sub menu & Mega__
+        __#sub menu & Mega__
     */
     .mega-content {
         display: grid;
@@ -1889,11 +2020,21 @@ form .button button,
     .inner-footer .wrap > div {
         flex-flow: nowrap;
     }
+    /* Categorias */
+    .page-category .content {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 60px;
+    }
+    .sidebar-title,
+    .sidebar-content {
+        padding: 0;
+    }
+    .sidebar,
+    .sidebar > .wrap {
+        all:unset
+    }
 }
-
-
-
-
 
 
 
