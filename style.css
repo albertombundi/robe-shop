@@ -1710,11 +1710,36 @@ form .button button,
 
 
 
-
-
-
-
-
+/*---------------------*
+    #CATEGORY-PAGE
+ *---------------------*/
+.sidebar-title {
+    font-size: 26px;
+}
+.sidebar .widget {
+    margin: 20px 0;
+}
+.sidebar label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.sidebar label span {
+    font-weight: var(--fw600);
+}
+.sidebar label i {
+    font-size: 26px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .list-block ul {
+    padding-left: 15px;
+    margin-top: 20px;
+    height: 230px;
+}
 
 
 @media (min-width: 481px) {
@@ -1851,7 +1876,7 @@ form .button button,
     .slider .button a:hover {
         border-color: var(--dark-color);
     }
-    .scrollto .wrapper {
+    .scrollto .wrapper:not(.initial) {
         --display: grid;
         padding: 0;
         overflow: unset;

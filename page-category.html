@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Categorias</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="page" class="page-single">
+    <div id="page" class="page-category">
         <header>
             <div class="inner-header">
                 <div class="container wide">
@@ -230,8 +230,7 @@
                                 <ul>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">Produtos</a></li>
-                                    <li><a href="#">Suéter</a></li>
-                                    <li><span>O Suéter na Tosca</span></li>
+                                    <li><span>Suéter</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -250,520 +249,125 @@
         </header>
         <main>
             <div class="section">
-                <div class="container">
-                    <div class="wrap">
-                        <div class="product dotgrid">
-                            <div class="wrapper">
-                                <div class="image">
-                                    <div class="outer-main">
-                                        <div class="main-image swiper">
-                                            <div class="wrap swiper-wrapper">
-                                                <div class="item swiper-slide"><img src="assets/product_01.jpg" alt="">
-                                                </div>
-                                                <div class="item swiper-slide"><img src="assets/product_01b.jpg" alt="">
-                                                </div>
-                                                <div class="item swiper-slide"><img src="assets/product_06.jpg" alt="">
-                                                </div>
-                                                <div class="item swiper-slide"><img src="assets/product_06b.jpg" alt="">
-                                                </div>
-                                                <div class="item swiper-slide"><img src="assets/product_02.jpg" alt="">
-                                                </div>
-                                                <div class="item swiper-slide"><img src="assets/product_02b.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="custom-pagination">
-                                            <div class="swiper-pagination"></div>
-                                        </div>
-                                    </div>
-                                    <div class="outer-thumb ob-cover">
-                                        <div class="thumbnail-image swiper">
-                                            <div class="wrap swiper-wrapper">
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_01.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_01b.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_06.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_06b.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_02.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_02b.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="summary">
-                                    <div class="entry">
-                                        <h1 class="title">O Suéter na Tosca</h1>
-                                        <div class="product-group">
-                                            <div class="product-price">
-                                                <span class="current">$45.00</span>
-                                                <div class="wrap">
-                                                    <span class="before">$62.00</span>
-                                                    <span class="discount">-25%</span>
-                                                </div>
-                                            </div>
-                                            <div class="product-rating">
-                                                <span>
-                                                    <i class="ri-star-fill"></i>
-                                                    <span>4.8</span>
-                                                </span>
-                                                <a href="">3 Avaliações</a>
-                                            </div>
-                                        </div>
-                                        <div class="product-color">
-                                            <span>Cores:</span>
-                                            <div class="wrap">
-                                                <button class="tosca selected"></button>
-                                                <button class="brown"></button>
-                                                <button class="ocean"></button>
-                                            </div>
-                                        </div>
-                                        <div class="product-size">
-                                            <span>Tamanho:</span>
-                                            <div class="wrap">
-                                                <button disabled>S</button>
-                                                <button>M</button>
-                                                <button class="selected">L</button>
-                                                <button>XL</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-stock">
-                                            <div class="wrap">
-                                                <strong>201</strong>
-                                                <span class="grey-color">em stock</span>
-                                                <i class="ri-checkbox-circle-line"></i>
-                                            </div>
-                                        </div>
-                                        <div class="product-action">
-                                            <div class="qty">
-                                                <button class="decrease">-</button>
-                                                <input type="text" value="1">
-                                                <button class="increase">+</button>
-                                            </div>
-                                            <div class="addcart button">
-                                                <button type="submit" class="primary-btn">Adicionar ao Carrinho</button>
-                                            </div>
-                                            <div class="buynow button">
-                                                <button type="submit" class="secondary-btn">Compre Agora</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-control list-inline">
-                                            <ul>
-                                                <li><a href="#"><i class="ri-heart-line"></i><span>Adicionar na lista de
-                                                            desejo</span></a></li>
-                                                <li><a href="#"><i
-                                                            class="ri-arrow-left-right-line"></i><span>Compare</span></a>
-                                                </li>
-                                                <li><a href="0#" trigger-button data-target="data-share"><i
-                                                            class="ri-share-forward-line"></i><span>Partilhar</span></a>
-                                                </li>
-                                                <li><a href="0#" trigger-button data-target="data-question"><i
-                                                            class="ri-question-line"></i><span>Perguntar</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="shipping">
-                                            <ul>
-                                                <li>
-                                                    <i class="ri-gift-line"></i>
-                                                    <span>Entrega Grátis & Reembolso</span>
-                                                    <span class="grey-color">pedido à $100</span>
-                                                </li>
-                                                <li>
-                                                    <i class="ri-truck-line"></i>
-                                                    <span>Estimativa de entrega:</span>
-                                                    <span class="grey-color">01 - 07 jan, 2030</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product detail">
-                            <div class="wrapper tabbed">
-                                <nav class="list-inline scrollto">
-                                    <ul class="wrapper">
-                                        <li class="active"><a href="#0" class="tabbed-trigger"
-                                                data-id="product-description"><span>Detalhes do produto</span></a></li>
-                                        <li><a href="#0" class="tabbed-trigger"
-                                                data-id="product-custom"><span>Personalizar</span></a></li>
-                                        <li><a href="#0" class="tabbed-trigger"
-                                                data-id="product-review"><span>Avaliações</span><span
-                                                    class="item-floating">3</span></a></li>
-                                        <li><a href="#0" class="tabbed-trigger"
-                                                data-id="product-shipping"><span>Entregas</span></a></li>
-                                    </ul>
-                                </nav>
-                                <div id="product-description" class="product-about description active">
-                                    <div class="text-block">
-                                        <h3>O Suéter na Tosca</h3>
-                                        <div class="grey-color">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium
-                                                eum dolore natus error, sed accusamus cupiditate beatae. Modi sint
-                                                pariatur reiciendis accusamus recusandae quae.</p>
-                                            <p>dolor sit amet consectetur adipisicing elit. Alias laudantium eum dolore
-                                                natus error, sed accusamus cupiditate beatae. Modi sint pariatur
-                                                reiciendis</p>
-                                        </div>
-                                    </div>
-                                    <div class="dotgrid">
-                                        <div class="wrapper">
-                                            <div class="list-block">
-                                                <h4>O que é isto?</h4>
-                                                <ul class="grey-color">
-                                                    <li>95% Poliester, 5% Spandex</li>
-                                                    <li>Wrap closure</li>
-                                                    <li>apenas Lavagem à mão </li>
-                                                    <li>Simple yet flaterring dress</li>
-                                                </ul>
-                                            </div>
-                                            <div class="list-block">
-                                                <h4>O que torna os nossos produtos únicos?</h4>
-                                                <p class="grey-color">
-                                                    Sempre trazendo para ti novo estilo de moda e design bonitos.
-                                                    dedicamos os nossos esforços para vestuários com design bonito em
-                                                    alta qualidade.</p>
-
-                                            </div>
-                                            <div class="list-block">
-                                                <h4>Instruções de Lavagem</h4>
-                                                <p class="grey-color">Lavagem á mão ou maquina de lavagem leve</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="product-custom" class="product-about custom">
-                                    <h3>Nossos tamanhos Personalizados</h3>
-                                    <div class="image">
-                                        <img src="assets/custom-size.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div id="product-review" class="product-about review">
-                                    <div class="wrapper">
-                                        <h3>Classificações & Avaliações</h3>
-                                        <div class="head-review">
-                                            <div class="sum-rating">
-                                                <strong>4.8</strong>
-                                                <span>3 Avaliações</span>
-                                            </div>
-                                            <div class="button">
-                                                <a href="#0" class="primary-btn" trigger-button
-                                                    data-target="data-review">Faça uma avaliação</a>
-                                            </div>
-                                        </div>
-                                        <div class="body-review">
-                                            <div class="profile">
-                                                <div class="thumb-name">
-                                                    <div class="image">
-                                                        <img src="assets/ig_01.jpg" alt="">
-                                                    </div>
-                                                    <div class="grouping">
-                                                        <div class="name">Sarah</div>
-                                                        <div class="rating">
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                        </div>
-                                                        <div class="date grey-color">Em 7 de novembro, 2022</div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment">
-                                                    <strong>Produtos Incríveis</strong>
-                                                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Ullam error fugit recusandae assumenda
-                                                        doloremque impedit minima cum a totam tenetur.</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile">
-                                                <div class="thumb-name">
-                                                    <div class="image">
-                                                        <img src="assets/ig_02.jpg" alt="">
-                                                    </div>
-                                                    <div class="grouping">
-                                                        <div class="name">Kamila</div>
-                                                        <div class="rating">
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                        </div>
-                                                        <div class="date grey-color">Em 14 de Julho, 2022</div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment">
-                                                    <strong>Isto é o que eu estava mesmo a precisar</strong>
-                                                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Ullam error fugit recusandae assumenda
-                                                        doloremque impedit minima cum a totam tenetur.</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile">
-                                                <div class="thumb-name">
-                                                    <div class="image">
-                                                        <img src="assets/ig_03.jpg" alt="">
-                                                    </div>
-                                                    <div class="grouping">
-                                                        <div class="name">Sandy</div>
-                                                        <div class="rating">
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                            <i class="ri-star-fill"></i>
-                                                        </div>
-                                                        <div class="date grey-color">Em 23 de Março, 2022</div>
-                                                    </div>
-                                                </div>
-                                                <div class="comment">
-                                                    <strong>Devias comprar também</strong>
-                                                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Ullam error fugit recusandae assumenda
-                                                        doloremque impedit minima cum a totam tenetur.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="product-shipping" class="product-about shipping">
-                                    <div class="grey-color">
-                                        <p>O custo de entrega é de acordo o peso. Adicione produtos para ver na
-                                            calculadora o valor de entrega</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit
-                                            perspiciatis temporibus deserunt quasi cumque tempora laborum, repellendus
-                                            et quo dignissimos eligendi vero tempore nam officiis fugiat ratione
-                                            necessitatibus suscipit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel">
-                <div class="container">
+                <div class="container wide">
                     <div class="wrap">
                         <div class="heading">
-                            <h2 class="title">Novidades</h2>
+                            <h1 class="title">Suéter</h1>
                         </div>
-                        <div class="inner-wrapper">
-                            <div class="dotgrid carouselbox swiper">
-                                <div class="wrapper swiper-wrapper">
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_02.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_02b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">Azul Oceano LLC2</a></h2>
-                                            <div class="product-price">
-                                                <span class="current">$57.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_01.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_01b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">O Suéter na Tosca</a></h2>
-                                            <div class="product-price">
-                                                <span class="before">$62.00</span>
-                                                <span class="current">$45.00</span>
+                        <div class="content">
+                            <div id="sidebar-filter" class="sidebar">
+                                <div class="wrap">
+                                    <a href="0#" class="close-trigger">
+                                        <i class="ri-close-line"></i>
+                                    </a>
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-title">Filtro</div>
+                                        <div class="widget">
+                                            <div class="summary">
+                                                <input type="checkbox" name="cats" id="aaa" checked>
+                                                <label for="aaa">
+                                                    <span>Size</span>
+                                                    <i class="ri-arrow-down-s-line"></i>
+                                                </label>
+                                                <div class="accord product-size">
+                                                    <div class="wrap">
+                                                        <button>S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                        <button>XXL</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_06.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_06b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">Mix de Castanho Dourado</a></h2>
-                                            <div class="product-price">
-                                                <span class="before">$62.00</span>
-                                                <span class="current">$45.00</span>
+                                        <div class="widget">
+                                            <div class="summary">
+                                                <input type="checkbox" name="cats" id="aab" checked>
+                                                <label for="aab">
+                                                    <span>Cor</span>
+                                                    <i class="ri-arrow-down-s-line"></i>
+                                                </label>
+                                                <div class="accord product-color">
+                                                    <div class="wrap">
+                                                        <button class="tosca"></button>
+                                                        <button class="brown"></button>
+                                                        <button class="ocean"></button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_07.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_07b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">Capucho Rosa Sólido </a></h2>
-                                            <div class="product-price">
-                                                <span class="current">$45.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_03.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_03b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">Suéter interno no Escritório </a></h2>
-                                            <div class="product-price">
-                                                <span class="before">$62.00</span>
-                                                <span class="current">$45.00</span>
+                                        <div class="widget">
+                                            <div class="summary">
+                                                <input type="checkbox" name="cats" id="aac" checked>
+                                                <label for="aac">
+                                                    <span>Categorias</span>
+                                                    <i class="ri-arrow-down-s-line"></i>
+                                                </label>
+                                                <div class="accord list-block scrollto">
+                                                    <ul class="wrapper initial">
+                                                       <li><a href="#">Vestuário ativo</a></li>
+                                                       <li><a href="#">Beleza</a></li>
+                                                       <li><a href="#">Candles</a></li>
+                                                       <li><a href="#">Moda</a></li>
+                                                       <li><a href="#">Mobilha</a></li>
+                                                       <li><a href="#">óculos</a></li>
+                                                       <li><a href="#">Chapeus</a></li>
+                                                       <li><a href="#">Manicure</a></li>
+                                                       <li><a href="#">Orgánico</a></li>
+                                                       <li><a href="#">Backpack</a></li>
+                                                       <li><a href="#">Dormitório</a></li>
+                                                       <li><a href="#">Café</a></li>
+                                                       <li><a href="#">Vida</a></li>
+                                                       <li><a href="#">Plantas</a></li>
+                                                       <li><a href="#">Ténis</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_08.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_08b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">O Marron 4</a></h2>
-                                            <div class="product-price">
-                                                <span class="before">$75.00</span>
-                                                <span class="current">$44.00</span>
+                                        <div class="widget">
+                                            <div class="summary">
+                                                <input type="checkbox" name="cats" id="aad" checked>
+                                                <label for="aad">
+                                                    <span>Marcas</span>
+                                                    <i class="ri-arrow-down-s-line"></i>
+                                                </label>
+                                                <div class="accord list-block scrollto">
+                                                    <ul class="wrapper initial">
+                                                       <li><a href="#">Adidas</a></li>
+                                                       <li><a href="#">Chanel</a></li>
+                                                       <li><a href="#">Dolce & Gabbana</a></li>
+                                                       <li><a href="#">Ganni</a></li>
+                                                       <li><a href="#">Gucci</a></li>
+                                                       <li><a href="#">Louis Vuitton</a></li>
+                                                       <li><a href="#">Nike</a></li>
+                                                       <li><a href="#">Prada</a></li>
+                                                       <li><a href="#">Puma</a></li>
+                                                       <li><a href="#">Zara</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="item swiper-slide">
-                                        <div class="dot-image">
-                                            <a href="#" class="product-permalink"></a>
-                                            <div class="thumbnail">
-                                                <img src="assets/product_05.jpg" alt="">
-                                            </div>
-                                            <div class="thumbnail hover">
-                                                <img src="assets/product_05b.jpg" alt="">
-                                            </div>
-                                            <div class="actions">
-                                                <ul>
-                                                    <li><a href="#"><i class="ri-star-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-arrow-left-right-line"></i></a></li>
-                                                    <li><a href="#"><i class="ri-eye-line"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="label"><span>-25%</span></div>
-                                        </div>
-                                        <div class="dot-info">
-                                            <h2 class="dot-title"><a href="#">Capucho Azul claro</a></h2>
-                                            <div class="product-price">
-                                                <span class="before">$105.00</span>
-                                                <span class="current">$79.00</span>
+                                        <div class="widget">
+                                            <div class="summary">
+                                                <label><span>Preço</span></label>
+                                                <div class="range-track">
+                                                    <input type="range" value="25" min="0" max="500" step="1">
+                                                </div>
+                                                <div class="price-range grey-color">
+                                                    <span>$30</span>
+                                                    <span>$500</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="nav">
-                                <div class="swiper-button-next">
-                                    <i class="ri-arrow-right-line"></i>
-                                </div>
-                                <div class="swiper-button-prev">
-                                    <i class="ri-arrow-left-line"></i>
-                                </div>
-                            </div>
+                            <div class="category-content"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--Carrossel-->
+
         </main>
         <footer>
             <div class="inner-footer">
