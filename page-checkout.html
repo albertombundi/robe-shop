@@ -254,7 +254,7 @@
                             <h1 class="title">Carrinho de compras</h1>
                         </div>
                         <div class="content">
-                            <div class="checkout-adress">
+                            <div class="checkout-address">
                                 <h2>Endereço de Entrega</h2>
                                 <form action="">
                                     <div class="dotgrid">
@@ -270,11 +270,11 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <label for="">Nome da Empresa *</label>
-                                        <input type="text" placeholder="Nome da Empresa">
+                                        <label for="">Nome da empresa *</label>
+                                        <input type="text" placeholder="Nome da empresa">
                                     </div>
                                     <div>
-                                        <label for="country">País/Região *</label>
+                                        <label for="country">País / Região *</label>
                                         <select name="country" id="country">
                                             <option value=""></option>
                                             <option value="1">Àfrica do Sul</option>
@@ -284,9 +284,197 @@
                                             <option value="5">Outros</option>
                                         </select>
                                     </div>
+                                    <div>
+                                        <label for="">Endereço da rua *</label>
+                                        <input type="text" placeholder="Endereço da rua">
+                                        <input type="text" placeholder="Apartamento, suite etc. (opcional)">
+                                    </div>
+                                    <div>
+                                        <label for="">Capital / Cidade *</label>
+                                        <input type="text" placeholder="Capital / Cidade">
+                                        
+                                    </div>
+                                    <div>
+                                        <label for="">Estado *</label>
+                                        <input type="text" placeholder="Estado">
+                                        
+                                    </div>
+                                    <div>
+                                        <label for="">Código zip *</label>
+                                        <input type="text" placeholder="Código zip">
+                                    </div>
+                                    <div class="dotgrid">
+                                        <div class="wrapper">
+                                            <div>
+                                                <label for="">Telefone *</label>
+                                                <input type="tel" placeholder="Telefone">
+                                            </div>
+                                            <div>
+                                                <label for="">Endereço  de email *</label>
+                                                <input type="email" placeholder="Endereço de email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="check-option">
+                                            <input type="checkbox" class="checker">
+                                            <span>Criar uma conta?</span>
+                                        </label>
+                                    </div>
                                 </form>
                             </div>
-                            <div class="checkout-products has-bg"></div>
+                            <div class="checkout-products has-bg">
+                                <div class="order-summary">
+                                    <div class="wrapper">
+                                        <h2>Resumo do pedido</h2>
+                                        <div class="product-list">
+                                            <ul>
+                                                <li>
+                                                    <div class="grouping">
+
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="assets/product_01.jpg" alt="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="variants">
+                                                        <h4 class="dot-title"><a href="">Suéter na Tosca</a></h4>
+                                                        <div class="color grey-color">
+                                                            <span>Cor:</span>
+                                                            <span>Tosca</span>
+                                                        </div>
+                                                        <div class="size grey-color">
+                                                            <span>Tamanho:</span>
+                                                            <span>L</span>
+                                                        </div>
+                                                        <div class="price-item">
+                                                            <span>$57.00</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="grouping">
+
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="assets/product_02.jpg" alt="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="variants">
+                                                        <h4 class="dot-title"><a href=""> Suéter azul aceano</a></h4>
+                                                        <div class="color grey-color">
+                                                            <span>Cor:</span>
+                                                            <span>Azul aceano</span>
+                                                        </div>
+                                                        <div class="size grey-color">
+                                                            <span>Tamanho:</span>
+                                                            <span>L</span>
+                                                        </div>
+                                                        <div class="price-item">
+                                                            <span>$45.00</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="grouping">
+
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="assets/product_07.jpg" alt="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="variants">
+                                                        <h4 class="dot-title"><a href="">Suéter Rosa</a></h4>
+                                                        <div class="color grey-color">
+                                                            <span>Cor:</span>
+                                                            <span>Rosa</span>
+                                                        </div>
+                                                        <div class="size grey-color">
+                                                            <span>Tamanho:</span>
+                                                            <span>L</span>
+                                                        </div>
+                                                        <div class="price-item">
+                                                            <span>$45.00</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-summary has-bg">
+                                    <div class="wrapper cart-footer">
+                                        <div class="payment-options list-inline">
+                                            <span>Selecione o método de pagamento</span>
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="cc">
+                                                    <label for="cc"><i class="ri-bank-card-line"></i></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="pp">
+                                                    <label for="pp"><i class="ri-paypal-card-line"></i></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="cod">
+                                                    <label for="cod"><i class="ri-hand-coin-line"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount">
+                                            <form action="">
+                                                <input type="text"  class="input" placeholder="Cupom">
+                                                <input type="submit"  class="submit" value="Aplicar">
+                                            </form>
+                                        </div>
+                                        <div class="math-pricing">
+                                            <ul>
+                                                <li>
+                                                    <span>Subtotal</span>
+                                                    <span class="value">$147.00</span>
+                                                </li>
+                                                <li>
+                                                    <span>Taxa</span>
+                                                    <span class="value">$14.70</span>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        <li><span>Entrega</span></li>
+                                                        <li>
+                                                            <div>
+                                                                <input type="radio" class="checker">
+                                                                <label>Grátis</label>
+                                                            </div>
+                                                            <span class="value">$0.00</span>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <input type="radio" class="checker">
+                                                                <label>Flat</label>
+                                                            </div>
+                                                            <span class="value">$10.00</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>Desconto promocional</span>
+                                                    <span class="value">$00.00</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span>Total</span>
+                                                    <span class="value">$161.70</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="button">
+                                            <a href="" class="secondary-btn">Encomendar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -652,6 +840,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="data-mobile-nav" class="mobile-nav">
+        <div class="wrap">
+            <a href="#0"><i class="ri-home-4-line"></i></a>
+            <a href="#0"><i class="ri-user-line"></i></a>
+            <a href="#0">
+                <i class="ri-star-line"></i>
+            </a>
+            <a href="#0" trigger-button data-target="data-cart">
+                <i class="ri-shopping-bag-line"></i>
+                <span class="item-floating">3</span>
+            </a>
+            <a href="#0"><i class="ri-arrow-up-line"></i></a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
