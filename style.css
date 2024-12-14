@@ -2088,23 +2088,25 @@ input[type="range"]::-webkit-slider-thumb {
 .checkout-products .payment-options {
     text-align: center;
     margin-bottom: 30px;
-    display: inline-block;
 }
 .checkout-products .payment-options > span {
     color: var(--light-color);
+    display: inline-block;
+    margin-bottom: 15px;
 }
 .checkout-products .payment-options ul {
     justify-content: center;
     gap: 20px;
 }
 .checkout-products .payment-options ul li label {
-    flex: 30px;
+    font-size: 30px;
     color: var(--grey-color);
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
     cursor: pointer;
     transition: var(--transition-color), var(--transition-background);
 }
@@ -2124,8 +2126,8 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: var(--dark-color);
 }
 .checkout-products .discount form input,
-.checkout-products .discount form input::placeholder 
-.checkout-products .discount  .cart-footer .math-pricing li span:not(.value) {
+.checkout-products .discount form input::placeholder, 
+.checkout-products .cart-footer .math-pricing li span:not(.value) {
     color: var(--light-color);
 }
 .checkout-products .total-summary ul li.total {
@@ -2134,11 +2136,11 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /*---------------------*
-    #MOBILE NAV
+    #Barra de navegacão para Mobile
  *---------------------*/
  .mobile-nav {
     top: auto;
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     box-shadow: var(--shadow);
     z-index: 888;
 }
@@ -2155,7 +2157,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 34px;
     display: flex;
     justify-content: center;
-    color: var(--white-color);
+    color: var(--dark-color);
     border-radius: 3px;
     transition: var(--transition-background), var(--transition-color);
 }
@@ -2244,6 +2246,12 @@ input[type="range"]::-webkit-slider-thumb {
     .checkout-products > div .wrapper, 
     .checkout-products .total-summary {
         margin: 0;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .inner-footer .bottom {
+        padding-bottom: 0;
     }
 }
 
